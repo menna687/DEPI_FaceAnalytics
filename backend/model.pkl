@@ -1,0 +1,8 @@
+import pickle
+
+# Assume you have a trained model (regression/classification model)
+model = ...  # Your trained model
+
+# Save the model to a file
+with open('models/model.pkl', 'wb') as file:
+    pickle.dump(model, file)
