@@ -27,3 +27,38 @@ The backbone CNN weights are freezed except for the last few layers. The other h
 * For gender and age -> Binary cross entropy loss
 
 ## Model Deployment
+## Deployment
+
+The Face Recognition App is deployed using a Flask backend to handle API requests and a React frontend for the user interface.
+The deployment process involves setting up the backend and frontend environments, 
+installing the necessary dependencies, and running the applications .
+
+The Flask server manages the face recognition model and processes user inputs,
+while the React app provides an interactive interface for users to upload images and receive results. 
+Both components communicate through API calls to facilitate smooth functionality.
+
+## Technologies Used
+
+- **Frontend:**
+  - **React**: A JavaScript library for building user interfaces.
+  - **Axios**: For making HTTP requests from the frontend to the backend API.
+
+- **Backend:**
+  - **Flask**: A lightweight Python web framework for building the backend API.
+  - **Pandas**: For data manipulation and analysis.
+  - **scikit-learn**: For implementing machine learning models.
+  - **OpenCV**: For image processing and face recognition tasks.
+
+- **Deployment:**
+  - **Git**: For version control and managing the project repository.
+  - **GitHub**: For hosting the project repository.
+  - **Heroku (or any other service you might use)**: For deploying the application online.
+
+- **Development Tools:**
+  - **Visual Studio Code**: Code editor used for development.
+  - **Postman**: For testing API endpoints.
+  - **npm**: Package manager for JavaScript.
+
+
+
+
