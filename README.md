@@ -3,6 +3,7 @@
 This project aims to build a multi-task learning model that can simultaneously perform face recognition, age estimation, and gender classification.
 
 ## Project Outline
+![image info](images/ML_pipeline.png)
 
 ## Dataset
 Using selected features from [CelebA Dataset](https://www.kaggle.com/datasets/jessicali9530/celeba-dataset)  
