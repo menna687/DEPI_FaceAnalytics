@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classification</title>
+
+    <!-- Include Bootstrap for responsive layout and components -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS for Modern Styling -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #495057;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-weight: 600;
+            color: #495057;
+        }
+
+        input[type="file"] {
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+        }
+
+        .results-section {
+            margin-top: 40px;
+            background-color: #f1f3f5;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .results-section h2 {
+            color: #343a40;
+        }
+
+        .results-section p {
+            font-size: 18px;
+            color: #495057;
+        }
+
+        .image-preview {
+            margin-top: 20px;
+        }
+
+        img {
+            border-radius: 8px;
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Image Classification</h1>
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="anchor_image">Upload Anchor Image:</label>
+                <input type="file" class="form-control-file" name="anchor_image" id="anchor_image" required>
+            </div>
+            <div class="form-group">
+                <label for="test_image">Upload Test Image:</label>
+                <input type="file" class="form-control-file" name="test_image" id="test_image" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+
+        {% if gender %}
+            <div class="results-section">
+                <h2>Results</h2>
+                <p><strong>Gender:</strong> {{ gender }}</p>
+                <p><strong>Age Classification:</strong> {{ age }}</p>
+                <p><strong>Verification:</strong> {{ verification }}</p>
+
+                <div class="row image-preview">
+                    <div class="col-md-6 text-center">
+                        <h4>Anchor Image</h4>
+                        <img src="{{ anchor_image_path }}" alt="Anchor Image" class="img-fluid">
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <h4>Test Image</h4>
+                        <img src="{{ test_image_path }}" alt="Test Image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
