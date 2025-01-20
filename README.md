@@ -27,8 +27,6 @@ The backbone CNN weights are freezed except for the last few layers. The other h
 * For gender and age -> Binary cross entropy loss
 
 ## Model Deployment
-## Deployment
-
 The Face Recognition App is deployed using a Flask backend to handle API requests and a React frontend for the user interface.
 The deployment process involves setting up the backend and frontend environments, 
 installing the necessary dependencies, and running the applications .
@@ -37,7 +35,7 @@ The Flask server manages the face recognition model and processes user inputs,
 while the React app provides an interactive interface for users to upload images and receive results. 
 Both components communicate through API calls to facilitate smooth functionality.
 
-## Technologies Used
+### Technologies Used
 
 - **Frontend:**
   - **React**: A JavaScript library for building user interfaces.
