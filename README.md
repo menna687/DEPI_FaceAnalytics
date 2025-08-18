@@ -50,12 +50,12 @@ Both components communicate through API calls to facilitate smooth functionality
 - **Deployment:**
   - **Git**: For version control and managing the project repository.
   - **GitHub**: For hosting the project repository.
-  - **Heroku (or any other service you might use)**: For deploying the application online.
 
 - **Development Tools:**
   - **Visual Studio Code**: Code editor used for development.
   - **Postman**: For testing API endpoints.
   - **npm**: Package manager for JavaScript.
+
 
 
 
