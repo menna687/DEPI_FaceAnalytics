@@ -23,7 +23,7 @@ The model consists of:
 The backbone CNN weights are freezed except for the last few layers. The other heads are all tainable.
 
 #### Loss function:
-* For face recognition task -> cosine simillarity
+* For face recognition task -> Triplet loss
 * For gender and age -> Binary cross entropy loss
 
 ## Model Deployment
