@@ -44,8 +44,8 @@ Both components communicate through API calls to facilitate smooth functionality
 - **Backend:**
   - **Flask**: A lightweight Python web framework for building the backend API.
   - **Pandas**: For data manipulation and analysis.
-  - **scikit-learn**: For implementing machine learning models.
-  - **OpenCV**: For image processing and face recognition tasks.
+  - **TF-Keras**: For implementing machine learning models.
+  - **OpenCV**: For image processing.
 
 - **Deployment:**
   - **Git**: For version control and managing the project repository.
@@ -55,6 +55,7 @@ Both components communicate through API calls to facilitate smooth functionality
   - **Visual Studio Code**: Code editor used for development.
   - **Postman**: For testing API endpoints.
   - **npm**: Package manager for JavaScript.
+
 
 
 
